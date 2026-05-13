@@ -2,7 +2,7 @@
 
 A free web app that audits your team's AI tool spending and surfaces concrete savings. Built as a lead-generation asset for [Credex](https://credex.rocks).
 
-**Live URL:** _[deployed on Vercel — add URL here]_
+**Live URL:** https://stackaudit-eta.vercel.app/
 
 ---
 
