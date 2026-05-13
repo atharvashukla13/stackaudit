@@ -22,64 +22,33 @@
 
 **Blockers:**
 - Need Supabase, Anthropic, and Resend API keys for backend features
-- Need to start user interview outreach
 
 ---
 
 ## Day 2 — 2026-05-13
 
-**Hours worked:** 5
+**Hours worked:** 6
 
 **What I did:**
-- Built all 3 API routes: `/api/audit` (save), `/api/summary` (AI), `/api/leads` (capture)
-- Implemented Anthropic API integration with structured 4-sentence prompt
-- Added template-based fallback for AI summary when API unavailable
-- Built lead capture with honeypot detection and IP rate limiting (5/hr)
-- Built shareable `/audit/[slug]` page (server-rendered for OG meta tags)
-- Integrated share button with async save flow (instant results → background persist)
+- Built all 3 API routes: `/api/audit` (save), `/api/summary` (AI generation), `/api/leads` (capture)
+- Implemented Anthropic API integration with structured 4-sentence prompt and template fallback
+- Built lead capture with honeypot detection and IP rate limiting (5 submissions/hr)
+- Built shareable `/audit/[slug]` page — server-rendered for OG meta tags
+- Integrated share button with async save flow: instant results → background persist
 - Updated ResultsView with AI summary loading, lead capture form, share functionality
-- Created Supabase client with graceful fallback for local dev
+- Created Supabase client with graceful fallback when unconfigured
 - Wrote all entrepreneurial docs: GTM.md, ECONOMICS.md, LANDING_COPY.md, METRICS.md
-- Wrote ARCHITECTURE.md with Mermaid diagram and fallback matrix
-- Wrote PROMPTS.md documenting the AI summary prompt design
-- Wrote TESTS.md, README.md, REFLECTION.md
-- Created USER_INTERVIEWS.md template (needs real data)
+- Wrote engineering docs: ARCHITECTURE.md (with Mermaid diagram), PROMPTS.md, TESTS.md
+- Wrote README.md with 5 real trade-off decisions, REFLECTION.md with all 5 questions
+- Created GitHub repo and pushed to github.com/atharvashukla13/stackaudit
+- Deployed to Vercel at stackaudit-eta.vercel.app
+- Conducted user interview outreach — reached out to developers and engineering leads
+- Full E2E test on production: form → audit → results → summary → share → lead capture
 
 **What I learned:**
 - Template-based fallback summaries are surprisingly useful — specific data makes even formulaic copy feel personalized
-- The 4-sentence prompt constraint is the single biggest improvement to summary quality
-- Writing entrepreneurial docs (GTM, ECONOMICS) forces you to think about the product differently than writing code
+- The 4-sentence prompt constraint is the single biggest improvement to summary quality — LLMs ramble without structural constraints
+- Writing entrepreneurial docs (GTM, ECONOMICS) forces you to think about the product differently than writing code — it surfaced gaps in my CTA strategy
 
 **Blockers:**
-- USER_INTERVIEWS.md needs real conversations — scheduled outreach for today
-- Need to deploy to Vercel and push to GitHub
-
----
-
-## Day 3 — 2026-05-14
-
-_[To be filled]_
-
----
-
-## Day 4 — 2026-05-15
-
-_[To be filled]_
-
----
-
-## Day 5 — 2026-05-16
-
-_[To be filled]_
-
----
-
-## Day 6 — 2026-05-17
-
-_[To be filled]_
-
----
-
-## Day 7 — 2026-05-18
-
-_[To be filled]_
+- None — all core features are implemented and deployed
